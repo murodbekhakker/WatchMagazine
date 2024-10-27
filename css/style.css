@@ -12,7 +12,7 @@
 }
 body {
   position: relative;
-  z-index: 99999;
+  z-index: 99999999;
 }
 .container {
   /* 1500-2*198+2*20=1144 */
@@ -25,7 +25,7 @@ header {
   padding: 23px 0;
   position: sticky;
   top: 0;
-  z-index: 11111  ;
+  z-index: 11111;
   width: 100%;
 }
 .hamburger {
@@ -36,6 +36,10 @@ header {
 .brands {
   display: flex;
   align-items: center;
+  gap: 60px;
+}
+.nav-logo {
+  display: flex;
 }
 ul {
   list-style-type: none;
@@ -74,7 +78,6 @@ ul {
 .nav_brand {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 .brand-name {
   color: white;
@@ -95,9 +98,11 @@ nav {
   gap: 100px;
 }
 .nav_secondry {
+  width: 30px;
   cursor: pointer;
   display: flex;
   gap: 15px;
+  padding-bottom: 15px;
 }
 /* section */
 section {
@@ -146,6 +151,7 @@ section {
   }
 }
 .input {
+  width: 100%;
   margin-top: 30px;
   max-width: 443px;
   height: 60px;
@@ -155,7 +161,9 @@ section {
   align-items: center;
   justify-content: center;
 }
-.section-input {
+.section-input input {
+  width: 100%;
+  max-width: 300px;
   padding-left: 10px;
   font-size: 16px;
   font-weight: 500;
@@ -395,6 +403,7 @@ section {
   max-width: 100%;
   margin: auto;
   position: relative;
+  z-index: 1;
 }
 
 .carousel-track {
@@ -453,32 +462,29 @@ section {
   position: absolute;
   z-index: 102;
 }
-.footer-input {
-  padding-left: 10px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20.08px;
-  color: #8b8e99b2;
-  outline: none;
-  border: none;
-  max-width: 280px;
-  height: 60px;
+.input-footer {
+  padding-top: 11px;
+  max-width: 442.6px;
+  height: 60.87px;
+  background-color: #ffffff;
   border-radius: 15px;
+}
+.input-footer input {
+  width: 320px;
+  border: none;
+  outline: none;
   cursor: pointer;
 }
 .footer-text_h3 {
-  max-width: 500px;
-  margin-top: 42px;
-  padding: 0 0 0 113px;
+  margin-top: 90px;
+  max-width: 546.5px;
+  height: 40.58px;
   font-size: 36px;
   font-weight: 700;
   line-height: 43.57px;
-  color: #1e1d1d;
 }
 .footer-text_p {
   margin-top: 18px;
-  margin-bottom: 30px;
-  padding: 0 0 0 113px;
   max-width: 536.51px;
   height: 29.42px;
   font-size: 16px;
@@ -487,7 +493,6 @@ section {
   color: #8b8e99;
 }
 .footer-color-menu {
-  margin-top: 30px;
   position: relative;
   z-index: 101;
   width: 100%;
@@ -497,13 +502,17 @@ section {
 }
 .footer-img {
   margin-top: 30px;
-  padding-left: 650px;
-  position: absolute;
-  z-index: 111;
+}
+.footer-text_card {
+  margin: 0 auto;
 }
 .footer-img__and-text {
-  width: 400px;
+  margin: 0 auto;
+  top: 100px;
+  position: relative;
   display: flex;
+  gap: 190px;
+  z-index: 1111111;
 }
 .footer-menu {
   width: 100%;
@@ -519,15 +528,6 @@ section {
   font-weight: 500;
   line-height: 20.08px;
   color: #ffffff;
-}
-.input__ftr {
-  max-width: 400px;
-  margin: 0 0 0 113px;
-  height: 60px;
-  border-radius: 15px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
 }
 #myBtn {
   display: block;
@@ -754,6 +754,9 @@ section {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .footer-img__and-text {
+    gap: 0;
+  }
 }
 @media (max-width: 950px) {
   .nav_secondry {
@@ -771,22 +774,29 @@ section {
   header {
     margin: 0 auto;
   }
-  .footer-img__and-text {
-    display: block;
-    flex-direction: column;
-  }
-  .footer-img {
-    margin-top: 80px;
-    padding-left: 250px;
-  }
-  .footer-color-menu {
-    width: 100%;
-    height: 360px;
+}
+@media (max-width: 810px) {
+  .footer-text_p {
+    padding-top: 40px;
   }
 }
 @media (max-width: 850px) {
   nav {
     justify-content: left;
+  }
+}
+@media (max-width: 680px) {
+  .footer-img__and-text {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 730px) {
+  .input-footer input {
+    width: 270px;
+  }
+  .input-footer {
+    margin-top: 25px;
   }
 }
 @media (max-width: 780px) {
@@ -832,24 +842,7 @@ section {
   .brands {
     padding-top: 25px;
   }
-  .input {
-    display: block;
-    width: 0;
-    height: 0;
-  }
-  .input-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .section-input {
-    padding-left: 0;
-    max-width: 443px;
-    height: 60px;
-  }
-  .search-section {
-    display: none;
-  }
+
   .smart_watch-img {
     margin-top: 130px;
   }
@@ -868,13 +861,19 @@ section {
   }
 }
 @media (max-width: 650px) {
-  .input__ftr {
-    margin-left: 0px;
-  }
 }
 @media (max-width: 550px) {
+  .section-input input {
+    width: 100%;
+    max-width: 100px;
+  }
   .footer-img {
-    padding-left: 70px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .input-footer input {
+    width: 100%;
+    max-width: 160px;
   }
 }
 @media (max-width: 400px) {
@@ -882,15 +881,15 @@ section {
     width: 100%;
   }
   .card_smart-images {
+    padding: 29px 0 29px 20px;
+    max-width: 320px;
+  }
+  .input-btn {
+    width: 100%;
+    max-width: 112px;
+  }
+  .card_smart-images {
     padding: 29px 0 15px 20px;
-  }
-  .footer-text_h3 {
-    display: flex;
-    justify-content: center;
-    padding: 0;
-  }
-  .footer-text_p {
-    padding: 0;
   }
 }
 @media (max-width: 360px) {
@@ -905,20 +904,5 @@ section {
   }
   .smart-watch_products_p {
     margin-bottom: 20px;
-  }
-
-  .footer-text_p {
-    width: 100%;
-    width: 270px;
-  }
-  .footer-text_h3 {
-    width: 100%;
-    width: 270px;
-  }
-  .footer-img {
-    padding-left: 0px;
-  }
-  .img_watch-img__footer {
-    width: 100%;
   }
 }
