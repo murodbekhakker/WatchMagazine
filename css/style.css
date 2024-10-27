@@ -1,0 +1,924 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  z-index: 99999;
+}
+.container {
+  /* 1500-2*198+2*20=1144 */
+  max-width: 1144px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background: linear-gradient(155.28deg, #383638 2.06%, #0b0b0b 33.08%);
+  padding: 23px 0;
+  position: sticky;
+  top: 0;
+  z-index: 11111  ;
+  width: 100%;
+}
+.hamburger {
+  display: none !important;
+  color: white;
+  font-size: 30px;
+}
+.brands {
+  display: flex;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+}
+.btn-link {
+  text-decoration: none;
+  color: white;
+}
+.nav-menu__link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #8b8e99;
+  text-decoration: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  margin-top: 200px;
+  display: none;
+  position: absolute;
+  background: linear-gradient(155.28deg, #5a545a 2.06%, #413131 33.08%);
+  min-width: 100px;
+  box-shadow: 5px 10px 18px 5px rgb(80, 82, 82);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 0 0 15px 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.nav_brand {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.brand-name {
+  color: white;
+}
+.nav-menu {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.navbar-shrink {
+  background: rgb(14, 15, 14);
+  padding: 40px 0;
+  transition: 0.5s;
+}
+nav {
+  display: flex;
+  gap: 100px;
+}
+.nav_secondry {
+  cursor: pointer;
+  display: flex;
+  gap: 15px;
+}
+/* section */
+section {
+  background: linear-gradient(155.28deg, #383638 2.06%, #0b0b0b 33.08%);
+}
+.section_text__h1 {
+  margin-top: 154px;
+  max-width: 457px;
+  height: 275px;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 80.32px;
+  color: #ffffff;
+}
+.section_text__p {
+  margin-top: 20px;
+  max-width: 456px;
+  height: 83px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.08px;
+  color: #8b8e99;
+}
+.section-menu {
+  display: flex;
+  gap: 184px;
+}
+.smart_watch-img {
+  width: 100%;
+}
+.section-smart-watch_images {
+  padding-top: 102px;
+  padding-bottom: 142px;
+}
+.brands_dropdown {
+  display: flex;
+  align-items: center;
+
+  img {
+    rotate: -180deg;
+    transition: 0.5s ease-in-out;
+  }
+
+  img:hover {
+    rotate: 360deg;
+  }
+}
+.input {
+  margin-top: 30px;
+  max-width: 443px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-input {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.08px;
+  color: #8b8e99b2;
+  outline: none;
+  border: none;
+  width: 280px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.input-btn {
+  border: none;
+  width: 112px;
+  height: 45px;
+  border-radius: 9px;
+  background-color: #3858d6;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.59px;
+  color: #ffffff;
+}
+/* aside */
+.aside-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 354px;
+  height: 239px;
+  width: 100%;
+  border-radius: 22px;
+  background-color: #f6f6f6;
+}
+.aside-card-img {
+  padding: 0 26px 0 41px;
+}
+.aside-card-text_h2 {
+  max-width: 173px;
+  height: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.57px;
+  color: #1e1d1d;
+}
+.aside-card-text_p {
+  padding-top: 9px;
+  max-width: 173px;
+  height: 76px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: #8b8e99;
+}
+.aside-cards {
+  padding-top: 386px;
+  display: flex;
+  gap: 20px;
+}
+/* smart-watch_products */
+.smart-watch_products_p {
+  margin-top: 135px;
+  max-width: 1102px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: center;
+  color: #3858d6;
+}
+.smart-watch_products_h2 {
+  max-width: 1100px;
+  height: 41px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.57px;
+  text-align: center;
+  color: #1e1d1d;
+}
+.card_smart-images {
+  padding: 29px 0 29px 45px;
+  display: flex;
+  max-width: 350px;
+  height: 337px;
+  background-color: #f6f6f6;
+}
+.smart-watch_products_card-h3 {
+  padding-top: 10px;
+  text-align: center;
+  width: 334px;
+  height: 29.42px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #1e1d1d;
+}
+.smart-watch_products_card-img {
+  padding-top: 15px;
+  text-align: center;
+}
+.smart-watch_products_card {
+  width: 334px;
+  height: 438px;
+}
+.smart-watch_products_card-sena {
+  padding-top: 8px;
+  text-align: center;
+}
+.smart-watch_products_card-sena {
+  margin-left: 100px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24.1px;
+  color: #8b8e99;
+  text-decoration: line-through;
+}
+.smart-watch_products_card-sena-span {
+  padding-left: 80px;
+  width: 172px;
+  height: 24.52px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.92px;
+  color: #000000;
+}
+.card-p {
+  display: block;
+  justify-content: center;
+}
+.smart-watch_products_cards {
+  padding-top: 60px;
+  gap: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.shop-icon {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #3858d6;
+  cursor: pointer;
+  transition: 5s;
+}
+
+.likes_icon {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #ff6b6b;
+  cursor: pointer;
+  transition: 5s;
+}
+.shop-icon:hover {
+  position: relative;
+  z-index: 2;
+  transition: 5s;
+}
+.smart-watch_products__button {
+  margin-top: 69px;
+  width: 196px;
+  height: 46px;
+  border-radius: 15px;
+  background-color: #3858d6;
+  border: none;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.smart-watch__btn {
+  display: flex;
+  justify-content: center;
+}
+.smart-watch_p-text {
+  margin-top: 135px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: center;
+  color: #3858d6;
+}
+.smart-watch_h2-text {
+  padding-bottom: 59px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.57px;
+  text-align: center;
+  color: #1e1d1d;
+}
+.people-card {
+  display: flex;
+  width: 524px;
+  height: 235.03px;
+  border-radius: 22px;
+  background-color: #f6f6f6;
+}
+.people-card-h4 {
+  padding: 57px 0 0 28px;
+  width: 261px;
+  height: 23.6px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  color: #1e1d1d;
+}
+.people-card-p {
+  padding: 30px 0 0 28px;
+  width: 255.97px;
+  height: 59.99px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: #8b8e99;
+}
+.people-card_img-yulduzcha {
+  padding: 35px 0 0 28px;
+}
+.people-cards {
+  display: flex;
+  gap: 46px;
+}
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  text-align: center;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Indicator styles */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* Responsivlik */
+@media (min-width: 768px) {
+  .carousel-item {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-item {
+    flex: 0 0 33.33%;
+  }
+}
+
+/* footer */
+.input__ftr {
+  padding-bottom: 600px;
+  padding: 0;
+  position: absolute;
+  z-index: 102;
+}
+.footer-input {
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.08px;
+  color: #8b8e99b2;
+  outline: none;
+  border: none;
+  max-width: 280px;
+  height: 60px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.footer-text_h3 {
+  max-width: 500px;
+  margin-top: 42px;
+  padding: 0 0 0 113px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.57px;
+  color: #1e1d1d;
+}
+.footer-text_p {
+  margin-top: 18px;
+  margin-bottom: 30px;
+  padding: 0 0 0 113px;
+  max-width: 536.51px;
+  height: 29.42px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: #8b8e99;
+}
+.footer-color-menu {
+  margin-top: 30px;
+  position: relative;
+  z-index: 101;
+  width: 100%;
+  height: 160px;
+  border-radius: 22px 22px 0 0;
+  background-color: #f6f6f6;
+}
+.footer-img {
+  margin-top: 30px;
+  padding-left: 650px;
+  position: absolute;
+  z-index: 111;
+}
+.footer-img__and-text {
+  width: 400px;
+  display: flex;
+}
+.footer-menu {
+  width: 100%;
+  height: 65px;
+  padding: 23px 0px 22px 0px;
+  background-color: #0b0b0b;
+}
+.footer-menu-text-p {
+  margin: 0 auto;
+  width: 207px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.08px;
+  color: #ffffff;
+}
+.input__ftr {
+  max-width: 400px;
+  margin: 0 0 0 113px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(22, 21, 21);
+  color: rgb(2, 250, 64);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  transition: 5s ease;
+}
+.aos-init {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  display: inline-flex;
+  align-items: center;
+  background-image: white;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+}
+
+.search :is(input, button) {
+  background: transparent;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+.search__input {
+  width: 0;
+  transition: width 0.5s;
+}
+
+.search__button {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: color 0.25s;
+}
+
+.search__button:hover {
+  color: #e3e3e3;
+}
+
+.search:focus-within input {
+  width: 200px;
+}
+
+::placeholder {
+  font: inherit;
+  color: #e3e3e3;
+}
+
+#loading {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-right: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+  transition: 0.5s;
+}
+
+#loading.loading-none {
+  opacity: 0;
+  z-index: -1;
+}
+@keyframes ldio-yzaezf3dcmj {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.ldio-yzaezf3dcmj div {
+  box-sizing: border-box !important;
+}
+
+.ldio-yzaezf3dcmj > div {
+  position: absolute;
+  width: 178.2px;
+  height: 178.2px;
+  top: 9.9px;
+  left: 9.9px;
+  border-radius: 50%;
+  border: 15.84px solid #000;
+  border-color: #03ef0b transparent #03ef0b transparent;
+  animation: ldio-yzaezf3dcmj 1s linear infinite;
+}
+
+.ldio-yzaezf3dcmj > div:nth-child(2),
+.ldio-yzaezf3dcmj > div:nth-child(4) {
+  width: 142.56px;
+  height: 142.56px;
+  top: 27.72px;
+  left: 27.72px;
+  animation: ldio-yzaezf3dcmj 1s linear infinite reverse;
+}
+.ldio-yzaezf3dcmj > div:nth-child(2) {
+  border-color: transparent #4b06ef transparent #4b06ef;
+}
+.ldio-yzaezf3dcmj > div:nth-child(3) {
+  border-color: transparent;
+}
+.ldio-yzaezf3dcmj > div:nth-child(3) div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+}
+.ldio-yzaezf3dcmj > div:nth-child(3) div:before,
+.ldio-yzaezf3dcmj > div:nth-child(3) div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15.84px;
+  height: 15.84px;
+  top: -15.84px;
+  left: 65.34px;
+  background: #03ef0b;
+  border-radius: 50%;
+  box-shadow: 0 162.35999999999999px 0 0 #03ef0b;
+}
+.ldio-yzaezf3dcmj > div:nth-child(3) div:after {
+  left: -15.84px;
+  top: 65.34px;
+  box-shadow: 162.35999999999999px 0 0 0 #03ef0b;
+}
+
+.ldio-yzaezf3dcmj > div:nth-child(4) {
+  border-color: transparent;
+}
+.ldio-yzaezf3dcmj > div:nth-child(4) div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg);
+}
+.ldio-yzaezf3dcmj > div:nth-child(4) div:before,
+.ldio-yzaezf3dcmj > div:nth-child(4) div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15.84px;
+  height: 15.84px;
+  top: -15.84px;
+  left: 47.519999999999996px;
+  background: #4b06ef;
+  border-radius: 50%;
+  box-shadow: 0 126.72px 0 0 #4b06ef;
+}
+.ldio-yzaezf3dcmj > div:nth-child(4) div:after {
+  left: -15.84px;
+  top: 47.519999999999996px;
+  box-shadow: 126.72px 0 0 0 #4b06ef;
+}
+.loadingio-spinner-double-ring-2by998twmg8 {
+  width: 198px;
+  height: 198px;
+  display: inline-block;
+  overflow: hidden;
+  background: #121111;
+}
+.ldio-yzaezf3dcmj {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.ldio-yzaezf3dcmj div {
+  box-sizing: content-box;
+}
+@media (max-width: 1200px) {
+  .smart-watch_products_h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .smart-watch_products_p {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1120px) {
+  .section-menu {
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-smart-watch_images {
+    padding-top: 0;
+  }
+  .smart-watch_products_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1000px) {
+  .aside-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 950px) {
+  .nav_secondry {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  header {
+    margin: 0 auto;
+  }
+  .footer-img__and-text {
+    display: block;
+    flex-direction: column;
+  }
+  .footer-img {
+    margin-top: 80px;
+    padding-left: 250px;
+  }
+  .footer-color-menu {
+    width: 100%;
+    height: 360px;
+  }
+}
+@media (max-width: 850px) {
+  nav {
+    justify-content: left;
+  }
+}
+@media (max-width: 780px) {
+  .hamburger {
+    display: flex !important;
+  }
+  .nav-menu {
+    display: none !important;
+  }
+  .active {
+    display: flex !important;
+  }
+  .activeBtn {
+    display: flex !important;
+  }
+  #hamburger {
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
+  .nav_secondry {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+  .nav_brand {
+    display: flex;
+    align-items: center;
+    gap: 220px;
+  }
+  .brands {
+    padding-top: 25px;
+  }
+  .input {
+    display: block;
+    width: 0;
+    height: 0;
+  }
+  .input-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-input {
+    padding-left: 0;
+    max-width: 443px;
+    height: 60px;
+  }
+  .search-section {
+    display: none;
+  }
+  .smart_watch-img {
+    margin-top: 130px;
+  }
+  .section_text__p {
+    width: 100%;
+  }
+  .section_text__h1 {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 60.32px;
+    max-width: 257px;
+  }
+  .section_text__p {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 650px) {
+  .input__ftr {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 550px) {
+  .footer-img {
+    padding-left: 70px;
+  }
+}
+@media (max-width: 400px) {
+  .card_smart-images {
+    width: 100%;
+  }
+  .card_smart-images {
+    padding: 29px 0 15px 20px;
+  }
+  .footer-text_h3 {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .footer-text_p {
+    padding: 0;
+  }
+}
+@media (max-width: 360px) {
+  .aside-card-text_p {
+    width: 100%;
+  }
+  .aside-card-img {
+    padding: 0 10px 0 20px;
+  }
+  .card_smart-images {
+    padding: 29px 0 15px 10px;
+  }
+  .smart-watch_products_p {
+    margin-bottom: 20px;
+  }
+
+  .footer-text_p {
+    width: 100%;
+    width: 270px;
+  }
+  .footer-text_h3 {
+    width: 100%;
+    width: 270px;
+  }
+  .footer-img {
+    padding-left: 0px;
+  }
+  .img_watch-img__footer {
+    width: 100%;
+  }
+}
