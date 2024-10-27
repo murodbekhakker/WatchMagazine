@@ -177,7 +177,7 @@ section {
 }
 .input-btn {
   border: none;
-  width: 112px;
+  width: 95px;
   height: 45px;
   border-radius: 9px;
   background-color: #3858d6;
@@ -185,7 +185,6 @@ section {
   font-weight: 600;
   line-height: 22.59px;
   color: #ffffff;
-  margin-left: 25px;
 }
 /* aside */
 .aside-card {
@@ -860,12 +859,9 @@ section {
     margin-bottom: 60px;
   }
 }
-@media (max-width: 650px) {
-}
 @media (max-width: 550px) {
   .section-input input {
-    width: 100%;
-    max-width: 100px;
+    width: 280px;
   }
   .footer-img {
     margin: 0 auto;
@@ -874,6 +870,11 @@ section {
   .input-footer input {
     width: 100%;
     max-width: 160px;
+  }
+}
+@media (max-width: 420px) {
+  .section-input input {
+    width: 240px;
   }
 }
 @media (max-width: 400px) {
@@ -891,9 +892,12 @@ section {
     padding: 29px 0 15px 20px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 370px) {
   .aside-card-text_p {
     width: 100%;
+  }
+  .section-input input {
+    width: 180px;
   }
   .aside-card-img {
     padding: 0 10px 0 20px;
