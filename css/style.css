@@ -153,13 +153,12 @@ section {
 .input {
   width: 100%;
   margin-top: 30px;
-  max-width: 443px;
+  max-width: 400px;
   height: 60px;
   border-radius: 15px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .section-input input {
   width: 100%;
@@ -186,6 +185,7 @@ section {
   font-weight: 600;
   line-height: 22.59px;
   color: #ffffff;
+  margin-left: 25px;
 }
 /* aside */
 .aside-card {
@@ -885,8 +885,7 @@ section {
     max-width: 320px;
   }
   .input-btn {
-    width: 100%;
-    max-width: 112px;
+    max-width: 130px;
   }
   .card_smart-images {
     padding: 29px 0 15px 20px;
@@ -904,5 +903,8 @@ section {
   }
   .smart-watch_products_p {
     margin-bottom: 20px;
+  }
+  .card_smart-images {
+    padding: 29px 0 29px 20px;
   }
 }
