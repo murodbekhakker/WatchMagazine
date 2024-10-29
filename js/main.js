@@ -1,13 +1,3 @@
-// $(".owl-carousel").owlCarousel({
-//   loop: true,
-//   margin: 45,
-//   responsive: {
-//     1135: {
-//       items: 1,
-//     },
-//   },
-// });
-//CARUSEL
 const track = document.querySelector(".carousel-track");
 const dots = document.querySelectorAll(".dot");
 let startPos = 0;
